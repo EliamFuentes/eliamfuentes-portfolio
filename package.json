@@ -1,6 +1,6 @@
 {
-  "homepage": "http://daniellelsilva.github.io/react-portfolio",
-  "name": "portfolio-react",
+  "homepage": "https://eliamfuentes-portfolio.vercel.app",
+  "name": "eliamfuentes-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
