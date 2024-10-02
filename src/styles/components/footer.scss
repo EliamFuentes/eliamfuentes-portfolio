@@ -1,0 +1,56 @@
+@import '../main.scss';
+
+.footer {
+  animation: opacityEffect 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideEffect 3s ease both;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding: 0 0 2.5% 10%;
+
+  & p {
+    font-weight: 400;
+  }
+
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
+
+  &-text {
+    margin: 0 0 0 .9%;
+  }
+}
+
+
+.home-curriculum-button {
+  background-color: $color-green;
+  color: $color-black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  svg {
+    margin-left: 8px; // Dá um espaçamento entre o texto e o ícone
+  }
+
+  &:hover {
+    background-color: darken($color-green, 10%);
+  }
+}
