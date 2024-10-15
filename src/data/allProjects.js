@@ -1,15 +1,12 @@
-import tryunfo from '../assets/killertrunfo.mp4';
-import trybetunes from '../assets/trybetunes.mp4';
-import trybewallet from '../assets/TrybeWallet.mp4';
-import appDeReceitas from '../assets/app-de-receitas.mp4';
-import natours from '../assets/Natours.mp4';
-import dragNdrop from '../assets/dragNdrop.mp4';
+import videoListaTarefas from '../assets/video-lista-tarefas.mp4'
+import videoMoviesLib from '../assets/video-moviesLib.mp4'
 
 import imgSecretWord from '../assets/img-secretword.webp';
 import imgMalkaComics from '../assets/img-malkaComics.PNG'
 import imgMiniBlog from '../assets/img-miniblog.PNG'
 import imgSiteMario from '../assets/img-site-mario.png'
 import imgMoviesLib from '../assets/img-moviesLib.PNG'
+import imgListaTarefas from '../assets/img-lista-tarefas.PNG'
 
 
 const allProjects = [
@@ -19,8 +16,8 @@ const allProjects = [
     moduleCourse: 'Front-end',
     img: imgSecretWord,
     linkGitHub: 'https://github.com/EliamFuentes/secretword',
-    linkPage: 'https://daniellelsilva.github.io/drag-n-drop/',
-    linkVideo: dragNdrop,
+    linkPage: 'https://secretword-bay.vercel.app',
+    linkVideo: '',
     technologies: 'HTML, CSS, React, JSX, JSON',
     text: 'Secret Word é um jogo de advinhar palavras. Desenvolvi durante o curso "React do Zero a Maestria" onde coloquei em prática aprendizados de React, JSX e CSS.'
   },
@@ -32,7 +29,7 @@ const allProjects = [
     img: imgMalkaComics,
     linkGitHub: '',
     linkPage: 'https://malkacomics.com',
-    linkVideo: natours,
+    linkVideo: '',
     technologies: 'WordPress, HTML, PHP, CSS, MySQL',
     text: 'Este foi meu primeiro projeto desenvolvido usando o WordPress e outras linguagens. O objetivo do projeto é uma biblioteca virtual de histórias em quadrinho. Cada usuário possui um login para entrar em sua conta e acessar os comics.'
   },
@@ -42,9 +39,9 @@ const allProjects = [
     name: 'MiniBlog',
     moduleCourse: 'Front-end',
     img: imgMiniBlog,
-    linkGitHub: 'https://github.com/daniellelsilva/cook-it',
-    linkPage: 'https://daniellelsilva.github.io/cook-it/#/',
-    linkVideo: appDeReceitas,
+    linkGitHub: 'https://github.com/EliamFuentes/miniblog',
+    linkPage: 'miniblog-flax.vercel.app',
+    linkVideo: '',
     technologies: 'Hooks, React, JSX, CSS3, HTML5, Firebase',
     text: 'Este foi um projeto que desenvolvido durante o curso "React do Zero a Maestria". O projeto é um blog, com login e cadastro e área do  usuário e lugar para fazer posts no blog.'
   },
@@ -54,23 +51,23 @@ const allProjects = [
     name: 'Site Mario',
     moduleCourse: 'Front-end',
     img: imgSiteMario,
-    linkGitHub: 'https://github.com/daniellelsilva/TrybeWallet',
-    linkPage: 'https://daniellelsilva.github.io/TrybeWallet/#/',
-    linkVideo: trybewallet,
+    linkGitHub: '',
+    linkPage: '',
+    linkVideo: '',
     technologies: 'CSS, HTML, JAVASCRIPT',
     text: 'Um dos meus primeiros projetos WEB, é um site simples com HTML e CSS do fime SUPER MARIO'
   },
 
   {
     id: 8,
-    name: 'Sistema de Votação ',
+    name: 'Lista de Tarefas',
     moduleCourse: 'Front-end',
-    img: imgMiniBlog,
-    linkGitHub: 'https://github.com/daniellelsilva/trybetunes',
-    linkPage: 'https://daniellelsilva.github.io/trybetunes/#/',
-    linkVideo: trybetunes,
+    img: imgListaTarefas,
+    linkGitHub: 'https://github.com/EliamFuentes/lista-tarefas',
+    linkPage: 'https://lista-tarefas-eqbczy1zn-eliams-projects.vercel.app',
+    linkVideo: videoListaTarefas,
     technologies: 'React, JSX, CSS3, HTML5',
-    text: 'A proposta do projeto foi criar o TrybeTunes, uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.'
+    text: 'A proposta do projeto foi práticar conceitos do React, como hooks, filtros e validações. O projeto é uma lista de tarefas onde é possível adicionar, remover e completar tarefas, filtar por tarefas completas, incompletas e por todas, pesquisar tarefas e ordenar por ordem alfabética.'
   },
 
   {
@@ -78,11 +75,11 @@ const allProjects = [
     name: 'Cátalogo de Filmes',
     moduleCourse: 'Front-end',
     img: imgMoviesLib,
-    linkVideo: tryunfo,
-    linkGitHub: 'https://github.com/daniellelsilva/tryunfo',
-    linkPage: 'https://daniellelsilva.github.io/tryunfo',
-    technologies: 'React, JSX, CSS3, HTML5',
-    text: 'Neste projeto foi desenvolvido um jogo de Super Trunfo. A aplicação possuia tema livre e deveria ser desenvolvido um baralho, sendo possível criar cartas, pré-visualizar a carta, adicionar e remover cartas do baralho, além de possuir três filtros.'
+    linkVideo: videoMoviesLib,
+    linkGitHub: 'https://github.com/EliamFuentes/movies_lib',
+    linkPage: 'https://movies-lib-three-tau.vercel.app',
+    technologies: 'React, JSX, CSS3, HTML5, API',
+    text: 'MovieLib é um catálogo de filmes criado utilizando a API do TMDB, onde é possível buscar filmes e suas descrições.'
   }
 ];
 
