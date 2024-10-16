@@ -12,13 +12,8 @@
     font-weight: 400;
   }
 
-  @include respond(tab-land) {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
   @include respond(phone) {
-    display: none;
+    animation: none;
   }
 
   &-text {
@@ -37,6 +32,9 @@
   text-align: center;
   text-decoration: none;
 
+  @include respond(phone) {}
+
+
   a {
     display: flex;
     align-items: center;
@@ -47,10 +45,10 @@
   }
 
   svg {
-    margin-left: 8px; // Dá um espaçamento entre o texto e o ícone
+    margin-left: 8px;
   }
 
   &:hover {
-    background-color: darken($color-green, 10%);
+    background-color: darken($color-green, 10%)
   }
 }
