@@ -22,8 +22,9 @@
     padding: .5% 1%;
     transition: all .2s;
 
-    @include respond(tab-land) {
+    @include respond(phone) {
       margin-right: 8.4%;
+      display: none;
     }
 
     @include respond(tab-port) {
@@ -34,10 +35,12 @@
       margin-right: 0;
       position: fixed;
       bottom: 0;
+      display: none;
     }
 
     @include respond(tab-port-small) {
       padding: .2% 0;
+      display: none;
     }
 
     & a {

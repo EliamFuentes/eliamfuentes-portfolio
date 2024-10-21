@@ -203,14 +203,41 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #fff;
 
-    @include respond(phone) {
+    @include respond(tab-port-small) {
+      position: static;
       width: 300px;
       height: 300px;
-      left: 50%;
-      right: auto;
-      transform: translate(-50%, -50%);
-      margin-top: 30px;
+      margin-top: 16em;
+      margin-bottom: -40%;
     }
+
+    @include respond(phone-small) {
+      position: static;
+      width: 300px;
+      height: 300px;
+      margin-top: -48%;
+      margin-bottom: -40%;
+    }
+
+    @include respond(phone-large) {
+      position: static;
+      width: 300px;
+      height: 300px;
+      margin-top: -48%;
+      margin-bottom: -40%;
+    }
+
+    @include respond(phone) {
+      position: static;
+      width: 300px;
+      height: 300px;
+      margin-top: -48%;
+      margin-bottom: -40%;
+    }
+
+
+
+
 
   }
 }

@@ -29,7 +29,7 @@ export default class About extends Component {
 
                 <p className="about-text-p about-text-p-3">Sou  estudante de desenvolvimento <span>full-stack</span></p>
 
-                <p className="about-text-p about-text-p-3">As tecnologias que estou utilizando no momento incluem <span>JavaScript</span>, <span>ReactJS</span>, <span>TypeScript</span>, e <span>Sass/CSS</span>, estou constantemente aprimorando minha habilidade em criar interfaces de usuário elegantes e funcionais. Além disso, estou familiarizada com ferramentas essenciais como NodeJS, Bootstrap, SQL e Docker para desenvolvimento de aplicativos robustos</p>
+                <p className="about-text-p about-text-p-3">As tecnologias que estou utilizando no momento incluem <span>JavaScript</span>, <span>ReactJS</span>, <span>TypeScript</span>, e <span>Sass/CSS</span>, estou constantemente aprimorando minha habilidade em criar interfaces de usuário elegantes e funcionais. Além disso, estou familiarizado com ferramentas essenciais como NodeJS, Bootstrap, SQL e Docker para desenvolvimento de aplicativos robustos</p>
 
                 <p className="about-text-p about-text-p-5">Estou aberto a oportunidades de colaboração, desafios emocionantes e novas conexões na indústria de tecnologia.</p>
 
