@@ -99,13 +99,13 @@
       letter-spacing: 2rem;
     }
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       font-size: 5rem;
-      letter-spacing: 4.4rem;
+      letter-spacing: 2rem;
     }
 
     @include respond(phone-large) {
-      font-size: 6rem;
+      font-size: 5rem;
       letter-spacing: 2rem;
     }
 
