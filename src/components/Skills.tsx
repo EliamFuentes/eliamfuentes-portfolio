@@ -1,26 +1,18 @@
 import { Card } from "@/components/ui/card";
-import {
-  Code2,
-  Database,
-  GitBranch,
-  Globe,
-  Layout,
-  Server,
-  Smartphone,
-  Terminal,
-} from "lucide-react";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDocker } from "react-icons/fa";
+import { SiTailwindcss, SiExpress, SiTypescript, SiPostgresql } from "react-icons/si"
 
 const skills = [
-  { name: "HTML/CSS", icon: Layout, color: "text-orange-500" },
-  { name: "JavaScript", icon: Code2, color: "text-yellow-500" },
-  { name: "React", icon: Globe, color: "text-blue-500" },
-  { name: "TypeScript", icon: Terminal, color: "text-blue-600" },
-  { name: "Node.js", icon: Server, color: "text-green-600" },
-  { name: "PHP", icon: Code2, color: "text-purple-500" },
-  { name: "Java", icon: Code2, color: "text-red-500" },
-  { name: "PostgreSQL", icon: Database, color: "text-blue-700" },
-  { name: "Git", icon: GitBranch, color: "text-orange-600" },
-  { name: "Responsive Design", icon: Smartphone, color: "text-pink-500" },
+  { name: "HTML/CSS", icon: FaHtml5, color: "text-orange-500" },
+  { name: "JavaScript", icon: FaCss3Alt, color: "text-yellow-500" },
+  { name: "React", icon: FaReact, color: "text-blue-500" },
+  { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+  { name: "Node.js", icon: FaNodeJs, color: "text-green-600" },
+  { name: "Express.js", icon: SiExpress, color: "text-purple-500" },
+  { name: "TailWindCSS", icon: SiTailwindcss, color: "text-red-500" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-700" },
+  { name: "Git", icon: FaGitAlt, color: "text-orange-600" },
+  { name: "Docker", icon: FaDocker, color: "text-pink-500" },
 ];
 
 const Skills = () => {
