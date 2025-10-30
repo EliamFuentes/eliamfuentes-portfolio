@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
 import profileImage from "@/assets/imagem_perfil.png";
+import CV from "@/assets/Curriculo_Eliam_Fuentes.pdf"
 
 const Hero = () => {
   return (
@@ -26,17 +27,19 @@ const Hero = () => {
 
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Desenvolvo aplicações modernas e escaláveis, unindo front-end criativo
-          com back-end robusto. Transformo ideias em soluções digitais eficientes.
+          com back-end robusto. Meu foco é React e Node.js.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-          <Button
-            size="lg"
-            className="bg-primary hover:bg-primary-dark text-primary-foreground font-medium px-8 shadow-lg hover:shadow-xl transition-all"
-          >
-            <Download className="mr-2 h-5 w-5" />
-            Download CV
-          </Button>
+          <a href={CV} download>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary-dark text-primary-foreground font-medium px-8 shadow-lg hover:shadow-xl transition-all"
+            >
+              <Download className="mr-2 h-5 w-5" />
+              Download CV
+            </Button>
+          </a>
 
           <div className="flex gap-3">
             <Button
@@ -45,7 +48,7 @@ const Hero = () => {
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
               asChild
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/EliamFuentes" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
@@ -55,7 +58,7 @@ const Hero = () => {
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
               asChild
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/eliamfuentes/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>

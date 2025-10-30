@@ -1,27 +1,29 @@
 import { Briefcase } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const experiences = [
   {
-    company: "Tech Solutions Ltda",
-    period: "2022 - Presente",
-    role: "Desenvolvedor Full-Stack",
-    description:
-      "Desenvolvimento e manutenção de aplicações web utilizando React, Node.js e PostgreSQL. Implementação de novas funcionalidades e otimização de performance.",
+    type: "study",
+    city: "Porto Alegre - RS",
+    period: "2022/02 - 2026/2",
+    role: "UNISINOS - Sistemas de Informação",
+    description: "Graduação em Sistemas de Informação",
   },
   {
-    company: "Digital Innovation",
-    period: "2021 - 2022",
-    role: "Desenvolvedor Front-End",
-    description:
-      "Criação de interfaces responsivas e acessíveis com React e Tailwind CSS. Colaboração com equipe de design para implementação de layouts modernos.",
+    type: "study",
+    city: "Porto Alegre - RS",
+    period: "maio/2025 - novembro/2025",
+    role: "Dev. Full-Stack Jr. +pra TI & Codifica",
+    description: "Formação intensiva com foco em desenvolvimento Full-Stack, combinando fundamentos de computação, desenvolvimento web (HTML, CSS, JavaScript, React), BackEnd com Java e Spring, bancos de dados relacionais (MySQL/PostgreSQL), práticas de DevOps e introdução à Inteligência Artificial. Durante a formação, são desenvolvidas habilidades técnicas e comportamentais essenciais para o mercado de TI, incluindo: Programação orientada a objetos e criação de APIs RESTful; Versionamento de código com Git/GitHub e deploy de aplicações em Vercel; Trabalho colaborativo em times e desenvolvimento de projetos práticos (SPA, API e aplicação fullstack com IA); Comunicação técnica, resolução de problemas, criatividade e apresentações de projetos.",
   },
   {
-    company: "StartUp Dev",
-    period: "2020 - 2021",
-    role: "Desenvolvedor Júnior",
+    type: "work",
+    city: "Porto Alegre - RS",
+    period: "2022 - 2024",
+    role: "UFCSPA - Estagiário em Desenvolvimento",
     description:
-      "Desenvolvimento de componentes reutilizáveis e integração com APIs REST. Participação ativa em code reviews e melhoria contínua do código.",
+      "Desenvolvedor estagiário com carga horária de 30h semanais, responsável por acompanhar o desenvolvimento de banco de dados, desenvolvimento e manutenção de sistemas PHP.",
   },
 ];
 
@@ -35,15 +37,17 @@ const Experience = () => {
 
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card
-              key={index}
-              className="p-6 hover-lift bg-card border-border"
-            >
+            <Card key={index} className="p-6 hover-lift bg-card border-border">
               <div className="flex flex-col md:flex-row md:items-start gap-4">
+                {/* Ícone dinâmico */}
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 flex-shrink-0">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  {exp.type === "study" ? (
+                    <GraduationCap className="h-6 w-6 text-primary" />
+                  ) : (
+                    <Briefcase className="h-6 w-6 text-primary" />
+                  )}
                 </div>
-                
+
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                     <h3 className="text-xl font-semibold text-foreground">
@@ -53,7 +57,7 @@ const Experience = () => {
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-primary font-medium mb-2">{exp.company}</p>
+                  <p className="text-primary font-medium mb-2">{exp.city}</p>
                   <p className="text-muted-foreground leading-relaxed">
                     {exp.description}
                   </p>
