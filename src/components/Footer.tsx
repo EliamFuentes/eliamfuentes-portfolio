@@ -5,9 +5,6 @@ const Footer = () => {
         <p className="text-muted-foreground">
           © {new Date().getFullYear()} Eliam Fuentes. Todos os direitos reservados.
         </p>
-        <p className="text-sm text-muted-foreground mt-2">
-          Desenvolvido com React, TypeScript e Tailwind CSS
-        </p>
       </div>
     </footer>
   );
