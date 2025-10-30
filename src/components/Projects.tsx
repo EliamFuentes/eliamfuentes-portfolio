@@ -4,9 +4,9 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Plataforma completa de e-commerce com carrinho, checkout e painel administrativo.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    title: "Mercadinho VIP",
+    description: "Projeto de conclusão da formação Dev. Full-Stack Jr. Sistema Web responsivo voltado para comércios que desejam controlar clientes, pontuação de fidelidade, fluxo financeiro e envio de promoções automatizadas. A aplicação possui acesso via desktop e celular, com funcionalidades pensadas para simplificar o dia a dia do pequeno varejista.",
+    technologies: ["React", "Node.js", "Express.js", "CSS Modules", "Supabase", "Swagger", "Docker"],
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop",
     github: "#",
     demo: "#",
