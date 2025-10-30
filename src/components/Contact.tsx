@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,12 +37,20 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("Mensagem enviada com sucesso! 🚀");
+          toast({
+            title: "Mensagem enviada! 🚀",
+            description: "Obrigado por entrar em contato. Retornarei em breve.",
+            variant: "default",
+          });
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.error("Erro ao enviar mensagem:", error);
-          alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente.");
+          toast({
+            title: "Erro ao enviar",
+            description: "Ocorreu um problema ao enviar sua mensagem. Tente novamente.",
+            variant: "destructive",
+          });
         }
       );
   };
