@@ -113,7 +113,7 @@ All colors MUST be HSL.
 
 @layer utilities {
   .animate-bounce-slow {
-    animation: bounce 2s infinite;
+    animation: bounce 2s ease-in-out infinite;
   }
   
   .hover-lift {

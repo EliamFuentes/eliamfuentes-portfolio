@@ -66,9 +66,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow">
-        <p className="text-sm text-muted-foreground">Deslize para ver mais</p>
-        <ChevronDown className="h-6 w-6 text-primary" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <div className="flex flex-col items-center gap-2 animate-bounce-slow">
+          <p className="text-sm text-muted-foreground">Deslize para ver mais</p>
+          <ChevronDown className="h-6 w-6 text-primary" />
+        </div>
       </div>
     </section>
   );
