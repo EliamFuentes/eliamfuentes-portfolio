@@ -2,38 +2,42 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
+import toughtsImage from "@/assets/toughts.png";
+import contratejaImage from "@/assets/contrateja.png";
+import movieAppImage from "@/assets/movieapp.png";
+
 const projects = [
   {
     title: "Mercadinho VIP",
     description: "Projeto de conclusão da formação Dev. Full-Stack Jr. Sistema Web responsivo voltado para comércios que desejam controlar clientes, pontuação de fidelidade, fluxo financeiro e envio de promoções automatizadas. A aplicação possui acesso via desktop e celular, com funcionalidades pensadas para simplificar o dia a dia do pequeno varejista.",
     technologies: ["React", "Node.js", "Express.js", "CSS Modules", "Supabase", "Swagger", "Docker"],
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/EliamFuentes/pdvlopers-projeto-final",
+    demo: null,
   },
   {
-    title: "Get A Pet",
-    description: "Em desenvolvimento...",
-    technologies: [],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop",
-    github: "",
-    demo: "#",
+    title: "Marketplace ContrateJá",
+    description: "ContrateJá é um marketplace de serviços locais com objetivo de conectar clientes a prestadores de serviços. Desenvolvido para praticar habilidades em front-end e back-end, o projeto inclui funcionalidades como cadastro de usuários, listagem de serviços, sistema de avaliações, visualização detalhes do serviço e contato direto com o prestador.",
+    technologies: ["React.js + Vite", "Node.js", "Express.js", "Tailwind CSS", "MySQL", "JWT", "REST", "Multer"],
+    image: contratejaImage,
+    github: "https://github.com/EliamFuentes/marketplace-contrateja",
+    demo: null,
   },
   {
     title: "MovieAPP",
     description: "O MovieAPP é uma aplicação em React + Vite que consome a API do TMDB, permitindo que usuários busquem filmes, vejam detalhes e montem uma lista de favoritos. Funcionalidades: busca de filmes, resultados de busca, paginação, página de detalhes, lista de favoritos e feedback de estado.",
     technologies: ["React", "Vite", "CSS Modules", "TMDB API"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+    image: movieAppImage,
     github: "https://github.com/EliamFuentes/atividade_05_API",
-    demo: "#",
+    demo: "https://movieapp-eight-xi.vercel.app/",
   },
   {
-    title: "Weather Forecast App",
-    description: "Aplicativo de previsão do tempo com geolocalização e notificações.",
-    technologies: ["React", "OpenWeather API", "PWA"],
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=400&fit=crop",
-    github: "#",
-    demo: "#",
+    title: "Toughts",
+    description: "Toughts é uma aplicação web desenvolvida com Node.js e Express.js que permite aos usuários compartilhar seus pensamentos e interagir em um ambiente simples e intuitivo. O projeto foi criado com objetivo de praticar habilidades em back-end, incluindo gerenciamento de rotas, manipulação de dados e integração com banco de dados.",
+    technologies: ["Node.js", "Express.js", "Sequelize", "Handlebars", "bcryptjs", "MySQL"],
+    image: toughtsImage,
+    github: "https://github.com/EliamFuentes/toughts-project",
+    demo: null,
   },
 ];
 
@@ -91,16 +95,28 @@ const Projects = () => {
                       Código
                     </a>
                   </Button>
-                  <Button
-                    size="sm"
-                    className="bg-primary hover:bg-primary-dark text-primary-foreground"
-                    asChild
-                  >
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo
-                    </a>
-                  </Button>
+
+                  {project.demo ? (
+                    <Button
+                      size="sm"
+                      className="bg-primary hover:bg-primary-dark text-primary-foreground"
+                      asChild
+                    >
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Demo
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="text-muted-foreground bg-muted cursor-not-allowed"
+                      disabled
+                    >
+                      🚧 Em desenvolvimento
+                    </Button>
+                  )}
                 </div>
               </div>
             </Card>
