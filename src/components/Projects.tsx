@@ -4,7 +4,7 @@ import { Github, ExternalLink } from "lucide-react";
 
 import toughtsImage from "@/assets/toughts.png";
 import contratejaImage from "@/assets/contrateja.png";
-import movieappImage from "@/assets/movieapp.png";
+import movieAppImage from "@/assets/movieApp.png";
 
 const projects = [
   {
@@ -27,7 +27,7 @@ const projects = [
     title: "MovieAPP",
     description: "O MovieAPP é uma aplicação em React + Vite que consome a API do TMDB, permitindo que usuários busquem filmes, vejam detalhes e montem uma lista de favoritos. Funcionalidades: busca de filmes, resultados de busca, paginação, página de detalhes, lista de favoritos e feedback de estado.",
     technologies: ["React", "Vite", "CSS Modules", "TMDB API"],
-    image: movieappImage,
+    image: movieAppImage,
     github: "https://github.com/EliamFuentes/atividade_05_API",
     demo: "https://movieapp-eight-xi.vercel.app/",
   },
